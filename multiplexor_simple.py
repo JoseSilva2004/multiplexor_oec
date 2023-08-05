@@ -49,29 +49,16 @@ def funcion_XOR():  ##Funcion XOR: Para que su salida sea verdadera(1) por lo me
 def funcion_NOT():  ##Funcion NOT: La salida será la inversa de los valores de entrada
     print("*****NOT*****")
     a = int(input("Ingrese el valor de A: "))
-    b = int(input("Ingrese el valor de B: "))
 
-    if (a == 0 and b == 0):
+    if (a == 0 ):
         a = 1
-        b = 1
-        print("Salida NOT: ", "A:", a, "B: ", b)
+        print("Salida NOT: ", "A:", a)
     else:
-        if(a == 0 and b == 1):
-            a = 1
-            b = 0
-            print("Salida NOT: ", "A:", a, "B:", b)
+        if(a == 1):
+            a = 0
+            print("Salida NOT: ", "A:", a)
         else:
-            if(a == 1 and b == 0):
-                a = 0
-                b = 1
-                print("Salida NOT: ", "A:", a, "B:", b)
-            else:
-                if (a == 1 and b == 1):
-                    a = 0
-                    b = 0
-                    print("Salida NOT: ", "A:", a, "B:", b)
-                else:
-                    print("Error, el rango debe estar en valores binario (0 o 1)")
+            print("Error, el rango debe estar en valores binario (0 o 1)")
 
 
 ##Funcion Principal
